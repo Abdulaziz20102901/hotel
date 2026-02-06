@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+header {
+    background-image: url(../imgs/bg_img.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+
+nav .container .nav_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+nav .container .nav_info ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+
+nav .container .nav_info ul li {
+    cursor: pointer;
+    position: relative;
+}
+
+nav .container .nav_info ul li:hover {
+    color: #FF8D41;
+}
+
+nav .container .nav_info ul li::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 0px;
+    height: 2px;
+    left: 0px;
+    background-color: #A5A5A3;
+    transition: all .3s ease;
+}
+
+nav .container .nav_info ul li:hover::after {
+    width: 100%;
+}
+
+nav .container .nav_info button {
+    padding: 5px 10px;
+    background-color: #FF8D41;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    transition: all .3s ease;
+}
+
+nav .container .nav_info button:hover {
+    transform: translateY(-6px);
+}
+
+nav .container .nav_info button:active {
+    transform: scale(.9);
+}
+
+.hero .container .hero_text h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-top: 120px;
+    margin-bottom: 40px;
+}
+
+.hero .container .hero_text h1 {
+    font-size: 64px;
+    font-weight: 700;
+    color: #FFFFFF;
+    width: 604px;
+    margin-bottom: 40px;
+}
+
+.hero .container .hero_text p {
+    font-size: 16px;
+    font-weight: 500;
+    width: 604px;
+    color: #EEEEEE;
+    margin-bottom: 40px;
+}
+
+.hero .container .hero_text .hero_button button {
+    padding: 9px 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FF8D41;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+main .section_1 .container .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+main .section_1 .container .section_1_box {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+main .section_1 .container .section_1_box .section_1_img {
+    border: 2px solid rgba(128, 128, 128, 0.655);
+    padding: 10px;
+    border-radius: 50px;
+}
+
+main .section_1 .container .section_1_box .section_1_text h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+main .section_1 .container .section_1_box .section_1_text h1 :nth-child(1) {
+    color: #FF8D41;
+}
+
+main .section_1 .container .section_1_box .section_1_text h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    width: 650px;
+    margin-bottom: 25px;
+}
+
+main .section_1 .container .section_1_box .section_1_text p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #A5A5A3;
+    width: 650px;
+    margin-bottom: 25px;
+}
+
+main .section_1 .container .section_1_box .section_1_text button {
+    padding: 7px 12px;
+    border: 2px solid #FF8D41;
+    border-radius: 8px;
+    background-color: transparent;
+    color: #FF8D41;
+    transition: all .3s ease;
+}
+
+main .section_1 .container .section_1_box .section_1_text button:hover {
+    transform: translateY(-6px);
+}
+
+main .section_1 .container .section_1_box .section_1_text button:active {
+    transform: scale(.9)
+}
+
+main .section_2 {
+    background-color: #FF8D41;
+}
+
+main .section_2 .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .section_2 .container .section_2_text {
+    padding: 20px 0px;
+    text-align: center;
+    width: 120px;
+}
+
+main .section_2 .container .section_2_text h1 {
+    font-size: 42px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+main .section_2 .container .section_2_text h2 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+main .section_3 .container .section_3_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0px;
+}
+
+main .section_3 .container .section_3_box {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+main .section_3 .container .section_card {
+    border: 1px solid gray;
+    width: 350px;
+    text-align: center;
+    transition: all .3s ease;
+}
+
+main .section_3 .container .section_card:hover {
+    transform: translateY(-6px);
+}
+
+main .section_3 .container .section_3_box .section_card i {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #FF8D41;
+    margin-top: 40px;
+}
+
+main .section_3 .container .section_3_box .section_card h3 {
+    font-size: 20px;
+    font-weight: 700px;
+    margin-bottom: 30px;
+}
+
+main .section_3 .container .section_3_box .section_card p {
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+main .section_4 .container .section_4_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+main .section_4 .container .section_4_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .section_4 .container .section_4_box .section_4_card {
+    width: 298px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+main .section_4 .container .section_4_box .section_4_card i {
+    color: #FF8D41;
+    font-size: 40px;
+}
+
+main .section_4 .container .section_4_box .section_4_card h1 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #A5A5A3;
+    width: 200px;
+    margin: 0px auto;
+    padding: 20px 0px;
+}
+
+main .section_4 .container .section_4_box .section_4_card h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 10px;
+}
+
+main .section_4 .container .section_4_box .section_4_card a {
+    color: #A5A5A3;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+main .section_5 {
+    background-color: #F8F9FB;
+}
+
+main .section_5 .container .section_5_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+main .section_5 .container .section_5_title_ {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .section_5 .container .scection_5_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+    padding-bottom: 50px;
+}
+
+main .section_5 .container .scection_5_box .section_5_card {
+    background-color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 50px;
+    width: 382px;
+    transition: all .3s ease;
+}
+
+main .section_5 .container .scection_5_box .section_5_card:hover{
+    transform: translateY(-6px);
+}
+
+main .section_5 .container .scection_5_box .section_5_card h4 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: rgb(65, 65, 65);
+}
+
+main .section_5 .container .scection_5_box .section_5_card h5 {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px 0px;
+}
+
+footer .container{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+footer .container .footer_text h2{
+font-size: 14px;
+font-weight: 500;
+width: 280px;
+color: gray;
+padding: 15px;
+}
+
+footer .container ul{
+    font-size: 14px;
+    font-weight: 500;
+    color: #A5A5A3;
+    list-style: none;
+    line-height: 40px;
+}
+
+footer .container ul li:nth-child(1){
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+footer .container ul li{
+    cursor: pointer;
+}
+
+footer .container ul li:hover{
+    color: #FF8D41;
+    position: relative;
+}
+
+footer .container ul li::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 0px;
+    height: 2px;
+    left: 50%;
+    background-color: #FF8D41;
+    transform: translateX(-50%);
+    transition: all .3s ease;
+}
+
+footer .container ul li:hover::after{
+    width: 100%;
+}
