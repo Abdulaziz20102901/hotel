@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -13,58 +14,69 @@
 
 <body>
     <header>
-        <nav>
-            <div class="container">
-                <div class="nav_info">
-                    <img src="./imgs/nav_logo.png" alt="">
+        <div class="header_bg">
+            <nav>
+                <div data-aos="zoom-in-down" class="container">
+                    <div class="nav_info">
+                        <img src="./imgs/nav_logo.png" alt="">
 
-                    <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Rooms</li>
-                        <li>Services</li>
-                        <li>Contact</li>
-                    </ul>
+                        <ul>
+                            <li>Home</li>
+                            <li>About</li>
+                            <li>Rooms</li>
+                            <li>Services</li>
+                            <li>Contact</li>
+                        </ul>
 
-                    <button>Logout</button>
+                        <button>Logout</button>
+
+                        <div class="bars">
+                            <i class="fa-solid fa-bars-staggered"></i>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </nav>
-        <div class="hero">
-            <div class="container">
-                <div class="hero_text">
-                    <h2>Welcome To</h2>
+            </nav>
 
-                    <h1>Hotel Just <span>Stay</span> Ahmedabad India</h1>
+            <div data-aos="zoom-in-right" class="hero">
+                <div class="container">
+                    <div class="hero_text">
+                        <h2>Welcome To</h2>
 
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam maxime praesentium Why did
-                        the scarecrow win an award? Because he was outstanding in his field. Lorem ipsum
-                    </p>
+                        <h1>Hotel Just <span>Stay</span> Ahmedabad India</h1>
 
-                    <div class="hero_button">
-                        <button>Book Now</button>
-                        <span><button>Explore More</button></span>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam maxime praesentium Why
+                            did
+                            the scarecrow win an award? Because he was outstanding in his field. Lorem ipsum
+                        </p>
+
+                        <div class="hero_button">
+                            <button>Book Now</button>
+                            <span><button>Explore More</button></span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+
     </header>
 
     <main>
-        <section class="section_1">
-            <div class="container">
-                <div class="title">
+
+        <section  class="section_1">
+            <div  class="container">
+                <div data-aos="zoom-out" class="title">
                     <img src="./imgs/section_img.png" alt="">
                 </div>
 
-                <div class="section_1_box">
+                <div data-aos="zoom-out-up" class="section_1_box">
 
                     <div class="section_1_img">
                         <img src="./imgs/section_img_1.png" alt="">
                     </div>
 
-                    <div class="section_1_text">
+                    <div data-aos="zoom-out-up" class="section_1_text">
                         <h1>
                             History of Just <span>Stay</span>
                         </h1>
@@ -89,7 +101,7 @@
 
                 </div>
 
-                <div class="section_1_box">
+                <div data-aos="zoom-out-down" class="section_1_box">
 
                     <div class="section_1_text">
                         <h1>
@@ -113,7 +125,7 @@
                         </button>
                     </div>
 
-                    <div class="section_1_img">
+                    <div data-aos="zoom-out-down" class="section_1_img">
                         <img src="./imgs/section_img_1.png" alt="">
                     </div>
 
@@ -122,45 +134,45 @@
             </div>
         </section>
 
-        <section class="section_2">
+        <section data-aos="zoom-out-down" class="section_2">
             <div class="container">
 
-                <div class="section_2_text">
+                <div data-aos="zoom-in-left" class="section_2_text">
                     <h1>8</h1>
                     <h2>Years of Service</h2>
                 </div>
 
-                <div class="section_2_text">
+                <div data-aos="zoom-in-left" class="section_2_text">
                     <h1>459</h1>
                     <h2>Sq. Meter Area</h2>
                 </div>
 
-                <div class="section_2_text">
+                <div  class="section_2_text">
                     <h1>50</h1>
                     <h2>Nice Rooms</h2>
                 </div>
 
-                <div class="section_2_text">
+                <div data-aos="zoom-in-left" class="section_2_text">
                     <h1>3786</h1>
                     <h2>Happy Visitors</h2>
                 </div>
             </div>
         </section>
 
-        <section class="section_3">
+        <section data-aos="zoom-out-down" class="section_3">
             <div class="container">
 
                 <div class="section_3_title">
                     <img src="./imgs/section_3_img_1.png" alt="">
                 </div>
 
-                <div class="section_3_title">
-                    <img src="./imgs/section_3_img_2.png" alt="">
+                <div class="section_3_title_">
+                    <h1><span>Explore Our</span> <span>Services</span></h1>
                 </div>
 
                 <div class="section_3_box">
 
-                    <div class="section_card">
+                    <div  data-aos="flip-left" class="section_card">
                         <i class="fa-solid fa-mountain-city"></i>
 
                         <h3>Rooms & Appartment</h3>
@@ -168,7 +180,7 @@
                         <p>Figma ipsum component variant main layer. </p>
                     </div>
 
-                    <div class="section_card">
+                    <div  data-aos="flip-left" class="section_card">
                         <i class="fa-solid fa-chart-simple"></i>
 
                         <h3>Rooms & Appartment</h3>
@@ -176,7 +188,7 @@
                         <p>Figma ipsum component variant main layer. </p>
                     </div>
 
-                    <div class="section_card">
+                    <div  data-aos="flip-left" class="section_card">
                         <i class="fa-solid fa-spoon"></i>
 
                         <h3>Rooms & Appartment</h3>
@@ -184,7 +196,7 @@
                         <p>Figma ipsum component variant main layer. </p>
                     </div>
 
-                    <div class="section_card">
+                    <div data-aos="flip-right" class="section_card">
                         <i class="fa-solid fa-hanukiah"></i>
 
                         <h3>Rooms & Appartment</h3>
@@ -192,7 +204,7 @@
                         <p>Figma ipsum component variant main layer. </p>
                     </div>
 
-                    <div class="section_card">
+                    <div data-aos="flip-right" class="section_card">
                         <i class="fa-solid fa-wine-glass"></i>
 
                         <h3>Rooms & Appartment</h3>
@@ -200,7 +212,7 @@
                         <p>Figma ipsum component variant main layer. </p>
                     </div>
 
-                    <div class="section_card">
+                    <div data-aos="flip-right" class="section_card">
                         <i class="fa-solid fa-dumbbell"></i>
 
                         <h3>Rooms & Appartment</h3>
@@ -212,20 +224,20 @@
             </div>
         </section>
 
-        <section class="section_4">
+        <section  class="section_4">
             <div class="container">
 
-                <div class="section_4_title">
+                <div data-aos="zoom-out-down" class="section_4_title">
                     <img src="./imgs/section_4_img-1.png" alt="">
                 </div>
 
-                <div class="section_4_title">
-                    <img src="./imgs/section_4_img-2.png" alt="">
+                <div data-aos="zoom-out-down" class="section_4_title_">
+                    <h1>What People Say?</h1>
                 </div>
 
 
-                <div class="section_4_box">
-                    <div class="section_4_card">
+                <div  class="section_4_box">
+                    <div data-aos="zoom-out-right" class="section_4_card">
                         <div>
                             <i class="fa-solid fa-single-quote-right"></i>
                             <i class="fa-solid fa-single-quote-right"></i>
@@ -238,7 +250,7 @@
                         <a href="">Sandrine.Luettgen@gmail.com</a>
                     </div>
 
-                    <div class="section_4_card">
+                    <div data-aos="zoom-out-right" class="section_4_card">
                         <div>
                             <i class="fa-solid fa-single-quote-right"></i>
                             <i class="fa-solid fa-single-quote-right"></i>
@@ -251,7 +263,7 @@
                         <a href="">Sandrine.Luettgen@gmail.com</a>
                     </div>
 
-                    <div class="section_4_card">
+                    <div data-aos="zoom-out-left" class="section_4_card">
                         <div>
                             <i class="fa-solid fa-single-quote-right"></i>
                             <i class="fa-solid fa-single-quote-right"></i>
@@ -264,7 +276,7 @@
                         <a href="">Sandrine.Luettgen@gmail.com</a>
                     </div>
 
-                    <div class="section_4_card">
+                    <div data-aos="zoom-out-left" class="section_4_card">
                         <div>
                             <i class="fa-solid fa-single-quote-right"></i>
                             <i class="fa-solid fa-single-quote-right"></i>
@@ -281,14 +293,14 @@
         </section>
 
         <section class="section_5">
-            <div class="container">
+            <div data-aos="zoom-in-down" class="container">
 
                 <div class="section_5_title">
                     <img src="./imgs/section_4_img-1.png" alt="">
                 </div>
 
                 <div class="section_5_title_">
-                    <img src="./imgs/section_5_ttitle.png" alt="">
+                    Explore Our Rooms
                 </div>
 
                 <div class="scection_5_box">
@@ -318,10 +330,11 @@
                 </div>
             </div>
         </section>
+
     </main>
 
     <footer>
-        <div class="container">
+        <div data-aos="zoom-out-right" class="container">
 
             <div class="footer_text">
                 <img src="./imgs/footer_img.png" alt="">
@@ -372,5 +385,9 @@
         </div>
     </footer>
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 </html>
